@@ -71,13 +71,10 @@
   cursor: pointer;
 }
 
-.socialIcon:hover {
-  color: #0fdac2;
-}
 
 .rightSection {
   display: flex;
-  gap: 100px;
+  gap: 117px;
   flex: 1;
 }
 
@@ -87,10 +84,13 @@
   gap: 12px;
   min-width: 140px;
 }
-
+.footerlogo
+{
+  max-width:160px;
+}
 .footerLink {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease;
