@@ -18,7 +18,6 @@
   position: relative;
   z-index: 1;
 }
-
 .heroBackground{
   background: url('../../../../public/assets/images/hero.webp') no-repeat center center;
   background-size: cover;
