@@ -11,6 +11,7 @@ const ProfessionalOnline = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   return (
+    
     <>
       <section className={styles.section}>
         <Container maxWidth="xl">
@@ -34,7 +35,7 @@ const ProfessionalOnline = () => {
 
               {/* Content Bars */}
               <div className={styles.barsContainer}>
-                {PROFESSIONAL_ONLINE.contentBars.map((bar, index) => (
+                {PROFESSIONAL_ONLINE.contentBars.map((bar: { label: string; progress: number; color: string }, index: number) => (
                   <div key={index} className={styles.barWrapper}>
                     <div className={styles.barLabel}>
                       <span>{bar.label} :</span>
