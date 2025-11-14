@@ -64,16 +64,15 @@ const ProfessionalOnline = () => {
                 {/* Video Thumbnail Container */}
                 <div className={styles.videoCard}>
                   {/* Video Thumbnail */}
-                  <div className={styles.videoThumbnail}>
+                  <div className={`${styles.videoThumbnail}`}>
                     {/* Person Image - Left Side */}
-                    <div className={styles.personImageContainer}>
+                    <div className={`${styles.personImageContainer}`}>
                       <Image
                         src={PROFESSIONAL_ONLINE.video.thumbnail}
                         alt="Person"
                         fill
-                        className={styles.personImage}
+                        className={`${styles.personImage} ms-4 max-w-[10rem]`}
                         priority
-                        sizes="(max-width: 768px) 12rem, (max-width: 1024px) 14rem, 16rem"
                       />
                       <div className={styles.personImageOverlay} />
                     </div>

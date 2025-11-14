@@ -133,3 +133,22 @@ img {
     display: none;
   }
 }
+
+/* Calendly Widget Styles - Show only calendar */
+.calendly-inline-widget {
+  min-width: 320px;
+  height: 650px;
+}
+
+.calendly-inline-widget iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide Calendly branding and header elements */
+.calendly-badge-widget,
+.calendly-header,
+.calendly-popup-content-header {
+  display: none !important;
+}

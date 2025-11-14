@@ -356,3 +356,18 @@ export const GROWTH_GUIDES = [
   },
 ];
 
+export const CALENDLY_SECTION = {
+  heading: {
+    part1: "Let's Talk About Taking",
+    part2: "Marketing",
+    part3: "Off Your Plate",
+  },
+  description:
+    "Book a quick video call to see how your Smart Marketing AI Team can free you to run jobs while your digital presence runs itself",
+  buttonText: "Free Up Your Time",
+  buttonHref: "/get-started",
+  calendlyUrl: "https://calendly.com/your-username/meeting", // Replace with your actual Calendly URL
+  calendlyText:
+    "In minutes, you'll see examples of what your team can handle — ads, social, website, graphics — and how it all works together seamlessly",
+};
+

@@ -27,7 +27,7 @@ const CTABanner = ({
     <section className={`${styles.ctaBanner} ${className} relative overflow-hidden`}>
       {/* Content */}
       <Container maxWidth="xl" className="relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 py-12 md:py-16">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
           {/* Left Side - Question */}
           <div className="flex-1">
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-center md:text-left">
