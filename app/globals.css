@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-primary: #0fdac2;
+  --color-dark: #020016;
+  --color-purple: #643bff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary);
+  --color-dark: var(--color-dark);
+  --color-purple: var(--color-purple);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-wf: var(--font-wf-visual-sans);
+  --font-graphik: var(--font-graphik-regular);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--color-dark);
+  color: var(--foreground);
+  font-family: var(--font-graphik-regular), Arial, Helvetica, sans-serif;
+}
+
+
+.sectionPadding{
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+/* Apply WF font to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-wf-visual-sans), sans-serif;
+}
+
+/* Apply Graphik font to paragraphs, buttons, lists, and other text elements */
+p, button, a, ul, ol, li, span, div, input, textarea, select, label {
+  font-family: var(--font-graphik-regular), Arial, Helvetica, sans-serif;
+}
