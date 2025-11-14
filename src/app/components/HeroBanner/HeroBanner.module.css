@@ -20,7 +20,7 @@
 }
 
 .heroBackground{
-  background: url('../../../public/assets/images/hero.webp') no-repeat center center;
+  background: url('../../../../public/assets/images/hero.webp') no-repeat center center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

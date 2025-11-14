@@ -18,13 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 const wfVisualSans = localFont({
-  src: "../public/assets/fonts/WFVisualSansVF.ttf",
+  src: "../../public/assets/fonts/WFVisualSansVF.ttf",
   variable: "--font-wf-visual-sans",
   display: "swap",
 });
 
 const graphikRegular = localFont({
-  src: "../public/assets/fonts/Graphik-Regular-Trial.otf",
+  src: "../../public/assets/fonts/Graphik-Regular-Trial.otf",
   variable: "--font-graphik-regular",
   display: "swap",
   fallback: ["Arial", "Helvetica", "sans-serif"],
