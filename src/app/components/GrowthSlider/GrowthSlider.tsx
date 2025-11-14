@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
+import Container from "../Container";
 
 type Guide = {
   id: string;
@@ -70,8 +71,8 @@ export default function GrowthSlider({ items }: { items: Guide[] }) {
   };
 
   return (
-    <section className="py-12">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="sectionPadding">
+      <Container maxWidth="xl">
         <div className="flex items-center justify-between mb-6">
           <h2 className="flex-1 text-center text-3xl md:text-4xl font-semibold text-white">Growth Guides</h2>
           <div className="flex gap-3">
@@ -159,7 +160,7 @@ export default function GrowthSlider({ items }: { items: Guide[] }) {
             </article>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
