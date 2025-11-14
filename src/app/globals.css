@@ -82,3 +82,34 @@ img {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
+
+/* Utility classes for EmpoweredTeam and CaseStudy components */
+.sectionPaddingCase {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.tabBgbox {
+  background: rgba(100, 59, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.scroll2 {
+  position: sticky;
+  top: 100px;
+}
+
+.right-column {
+  position: relative;
+}
+
+.hideOnipad {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .hideOnipad {
+    display: none;
+  }
+}

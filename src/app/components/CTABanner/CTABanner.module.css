@@ -1,0 +1,18 @@
+.ctaBanner {
+  position: relative;
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  background: url('../../../../public/assets/images/cta-banner.webp') no-repeat center center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+  .ctaBanner {
+    min-height: 10rem;
+  }
+}
+
