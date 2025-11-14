@@ -13,11 +13,7 @@ export default function Footer() {
           <div className={styles.leftSection}>
             {/* Logo */}
             <div className={styles.logoContainer}>
-              <div className={styles.logoText}>
-                <span className={styles.logoGradient}>Startups</span>
-                <span className={styles.rocketIcon}>🚀</span>
-              </div>
-              <div className={styles.logoSubtext}>ADVISORY.Ai</div>
+              <img src="/assets/images/logo.webp" className={`img-fluid ${styles.footerlogo}`}/>
             </div>
 
             {/* Social Media Icons */}

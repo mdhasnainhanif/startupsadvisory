@@ -35,7 +35,7 @@ export default function FAQ({
 
     return (
         <section
-            className={`relative py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 ${className}`}
+            className={`relative py-12 sm:py-16 md:py-20 lg:py-24 xl:py-17 ${className}`}
         >
             <Container maxWidth="xl" className="px-0">
                 <div className="flex flex-col items-center gap-8 sm:gap-10 md:gap-12 lg:gap-14">

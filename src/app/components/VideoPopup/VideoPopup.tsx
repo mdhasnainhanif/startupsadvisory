@@ -50,6 +50,14 @@ const VideoPopup = ({
 
   if (!isOpen) return null;
 
+  // Check if videoUrl is a local video file
+  const isLocalVideo = videoUrl && (
+    videoUrl.endsWith('.mp4') || 
+    videoUrl.endsWith('.webm') || 
+    videoUrl.endsWith('.ogg') ||
+    videoUrl.endsWith('.mov')
+  );
+
   return (
     <div
       className={`${styles.popupOverlay} ${isOpen ? styles.fadeIn : ""}`}
@@ -82,13 +90,24 @@ const VideoPopup = ({
 
         {/* Video Container */}
         <div className={styles.videoContainer}>
-          <iframe
-            src={videoUrl || "https://www.youtube.com/embed/dQw4w9WgXcQ"}
-            title={videoTitle}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className={styles.videoIframe}
-          />
+          {isLocalVideo ? (
+            <video
+              src={videoUrl}
+              controls
+              autoPlay
+              className={styles.videoElement}
+            >
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <iframe
+              src={videoUrl || "https://www.youtube.com/embed/dQw4w9WgXcQ"}
+              title={videoTitle}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className={styles.videoIframe}
+            />
+          )}
         </div>
       </div>
     </div>
