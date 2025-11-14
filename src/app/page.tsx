@@ -1,3 +1,4 @@
+import GrowthSlider from "./components/GrowthSlider/GrowthSlider";
 import HeroBanner from "./components/HeroBanner/HeroBanner";
 import FAQ from "./components/FAQ/FAQ";
 import Contact from "./components/Contact/Contact";

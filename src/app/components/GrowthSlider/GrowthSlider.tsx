@@ -79,9 +79,8 @@ export default function GrowthSlider({ items }: { items: Guide[] }) {
               onClick={() => scroll("left")}
               aria-label="Previous"
               disabled={!canScrollLeft}
-              className={`w-10 h-10 rounded-full bg-black/40 border border-white/6 text-white flex items-center justify-center shadow-md ${
-                !canScrollLeft ? "opacity-40 cursor-not-allowed" : "hover:bg-black/50"
-              }`}
+              className={`w-10 h-10 rounded-full bg-black/40 border border-white/6 text-white flex items-center justify-center shadow-md ${!canScrollLeft ? "opacity-40 cursor-not-allowed" : "hover:bg-black/50"
+                }`}
             >
               ‹
             </button>
@@ -89,9 +88,8 @@ export default function GrowthSlider({ items }: { items: Guide[] }) {
               onClick={() => scroll("right")}
               aria-label="Next"
               disabled={!canScrollRight}
-              className={`w-10 h-10 rounded-full bg-black/40 border border-white/6 text-white flex items-center justify-center shadow-md ${
-                !canScrollRight ? "opacity-40 cursor-not-allowed" : "hover:bg-black/50"
-              }`}
+              className={`w-10 h-10 rounded-full bg-black/40 border border-white/6 text-white flex items-center justify-center shadow-md ${!canScrollRight ? "opacity-40 cursor-not-allowed" : "hover:bg-black/50"
+                }`}
             >
               ›
             </button>

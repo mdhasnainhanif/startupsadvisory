@@ -1,5 +1,5 @@
 export const COMPANY_INFO = {
-  logo: "/assets/images/logo.svg", // Update with actual logo path
+  logo: "/assets/images/logo.svg",
   email: "info@startupsadvisory.ai",
   phone: "+1 (555) 123-4567",
   address: "123 Startup Street, Innovation City, IC 12345",
@@ -26,6 +26,7 @@ export const HERO_BANNER = {
   headline: "Your ",
   headlineHighlight: "Smart Marketing AI ",
   subheadline: "Team — Ready to Run Your Digital Work for You",
+  className: "bottomZero",
   description:
     "Finally, marketing that moves at the speed of your business. Your Smart Marketing AI Team plans, designs, writes, and posts — so you stay focused on serving clients.",
   ctaButton: {
