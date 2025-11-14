@@ -1,3 +1,4 @@
+import GrowthSlider from "./components/GrowthSlider/GrowthSlider";
 import HeroBanner from "./components/HeroBanner/HeroBanner";
 import ProfessionalOnline from "./components/ProfessionalOnline/ProfessionalOnline";
 import { HERO_BANNER } from "./constants";

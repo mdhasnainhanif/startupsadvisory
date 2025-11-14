@@ -34,13 +34,22 @@ body {
 }
 
 
-.sectionPadding{
+.sectionPadding {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
 }
 
+.bottomZero {
+  padding-bottom: 0rem;
+}
+
 /* Apply WF font to all headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-wf-visual-sans), sans-serif !important;
 }
 
@@ -67,7 +76,18 @@ main h6 {
 }
 
 /* Apply Graphik font to paragraphs, buttons, lists, and other text elements */
-p, button, a, ul, ol, li, span, div, input, textarea, select, label {
+p,
+button,
+a,
+ul,
+ol,
+li,
+span,
+div,
+input,
+textarea,
+select,
+label {
   font-family: var(--font-graphik-regular), Arial, Helvetica, sans-serif;
 }
 
