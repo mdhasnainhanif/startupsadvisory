@@ -5,6 +5,7 @@ import Image from "next/image";
 import "./globals.css";
 import TopHeader from "./components/TopHeader";
 import Header from "./components/Header";
+import Footer from "./components/Footer/Footer";
 import Container from "./components/Container";
 
 const geistSans = Geist({
@@ -64,6 +65,7 @@ export default function RootLayout({
           <TopHeader />
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
