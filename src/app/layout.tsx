@@ -54,6 +54,8 @@ export default function RootLayout({
             className="object-cover"
             priority
             quality={90}
+            sizes="100vw"
+            style={{ objectFit: "cover" }}
           />
           {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-[#020016]/70"></div>

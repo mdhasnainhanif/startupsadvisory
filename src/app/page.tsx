@@ -1,12 +1,12 @@
 import HeroBanner from "./components/HeroBanner/HeroBanner";
-import { HERO_BANNER, GROWTH_GUIDES } from "./constants";
-import GrowthSlider from "./components/GrowthSlider/GrowthSlider";
+import ProfessionalOnline from "./components/ProfessionalOnline/ProfessionalOnline";
+import { HERO_BANNER } from "./constants";
 
 export default function Home() {
   return (
     <main className="relative">
       <HeroBanner {...HERO_BANNER} />
-      <GrowthSlider items={GROWTH_GUIDES} />
+      <ProfessionalOnline />
     </main>
   );
 }

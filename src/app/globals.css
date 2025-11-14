@@ -41,10 +41,44 @@ body {
 
 /* Apply WF font to all headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-wf-visual-sans), sans-serif;
+  font-family: var(--font-wf-visual-sans), sans-serif !important;
+}
+
+/* Ensure headings in all components use WF font */
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6,
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: var(--font-wf-visual-sans), sans-serif !important;
 }
 
 /* Apply Graphik font to paragraphs, buttons, lists, and other text elements */
 p, button, a, ul, ol, li, span, div, input, textarea, select, label {
   font-family: var(--font-graphik-regular), Arial, Helvetica, sans-serif;
+}
+
+/* Prevent layout shifts for headers */
+header {
+  contain: layout style paint;
+  transform: translateZ(0);
+}
+
+/* Optimize image loading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }

@@ -10,7 +10,7 @@ export default function Button({
   iconPosition = "right",
   ...props
 }: ButtonProps) {
-  const baseClasses = "inline-flex items-center justify-center gap-1 font-medium transition-colors rounded-full px-10";
+  const baseClasses = "inline-flex items-center justify-center gap-3 font-medium transition-colors rounded-full px-6";
   
   const variantClasses = {
     primary: "bg-[#0fdac2] text-[#020016] hover:bg-[#0ec5b0]",
