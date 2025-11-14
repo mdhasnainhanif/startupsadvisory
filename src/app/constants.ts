@@ -36,3 +36,72 @@ export const HERO_BANNER = {
   },
 };
 
+export const GROWTH_GUIDES = [
+  {
+    id: "1",
+    image: "/assets/images/hero.webp",
+    category: "Shopify Agent",
+    title: "AI Agents Benefit From Data Quality Validation And More...",
+    date: "Nov 10, 2025",
+    readTime: "6 min read",
+    excerpt:
+      "Imagine launching a digital workforce of intelligent agents that operate on unstructured data — validated, enriched, and ready to act.",
+    href: "/blog/ai-agents-data-quality",
+  },
+  {
+    id: "2",
+    image: "/assets/images/hero.webp",
+    category: "Shopify Agent",
+    title: "AI Agents Benefit From Data Quality Validation And More...",
+    date: "Nov 10, 2025",
+    readTime: "7 min read",
+    excerpt:
+      "Imagine launching a digital workforce of intelligent agents that operate on unstructured data — validated, enriched, and ready to act.",
+    href: "/blog/ai-agents-data-quality-2",
+  },
+  {
+    id: "3",
+    image: "/assets/images/hero.webp",
+    category: "Shopify Agent",
+    title: "AI Agents Benefit From Data Quality Validation And More...",
+    date: "Nov 10, 2025",
+    readTime: "5 min read",
+    excerpt:
+      "Imagine launching a digital workforce of intelligent agents that operate on unstructured data — validated, enriched, and ready to act.",
+    href: "/blog/ai-agents-data-quality-3",
+  },
+  {
+    id: "4",
+    image: "/assets/images/hero.webp",
+    category: "Shopify Agent",
+    title: "AI Agents Benefit From Data Quality Validation And More...",
+    date: "Nov 10, 2025",
+    readTime: "5 min read",
+    excerpt:
+      "Imagine launching a digital workforce of intelligent agents that operate on unstructured data — validated, enriched, and ready to act.",
+    href: "/blog/ai-agents-data-quality-3",
+  },
+  {
+    id: "5",
+    image: "/assets/images/hero.webp",
+    category: "Shopify Agent",
+    title: "AI Agents Benefit From Data Quality Validation And More...",
+    date: "Nov 10, 2025",
+    readTime: "5 min read",
+    excerpt:
+      "Imagine launching a digital workforce of intelligent agents that operate on unstructured data — validated, enriched, and ready to act.",
+    href: "/blog/ai-agents-data-quality-3",
+  },
+  {
+    id: "6",
+    image: "/assets/images/hero.webp",
+    category: "Shopify Agent",
+    title: "AI Agents Benefit From Data Quality Validation And More...",
+    date: "Nov 10, 2025",
+    readTime: "5 min read",
+    excerpt:
+      "Imagine launching a digital workforce of intelligent agents that operate on unstructured data — validated, enriched, and ready to act.",
+    href: "/blog/ai-agents-data-quality-3",
+  },
+];
+
