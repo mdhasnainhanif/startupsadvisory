@@ -3,6 +3,8 @@
 import { HeroBannerProps } from "../../types/types";
 import Button from "../Button";
 import Container from "../Container";
+import { ArrowRightIcon } from "../icons";
+import LogosSlider from "../LogosSlider/LogosSlider";
 import styles from "./HeroBanner.module.css";
 
 export default function HeroBanner({
@@ -15,13 +17,13 @@ export default function HeroBanner({
 }: HeroBannerProps) {
   return (
     <section
-      className={`${styles.heroBackground} relative flex items-center justify-center sectionPadding overflow-hidden ${className}`}
+      className={`${styles.heroBackground} relative sectionPadding overflow-hidden ${className}`}
     >
       {/* Content */}
       <Container maxWidth="2xl" className={`${styles.content} relative z-10`}>
         <div className="flex flex-col items-center text-center gap-6 md:gap-8">
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold max-w-[48rem]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold max-w-3xl">
             <span className="text-white">{headline}</span>
             {headlineHighlight && (
               <>
@@ -46,14 +48,17 @@ export default function HeroBanner({
               href={ctaButton.href}
               variant={ctaButton.variant || "secondary"}
               size="lg"
-              icon="→"
+              icon={<ArrowRightIcon />}
               iconPosition="right"
             >
               {ctaButton.text}
             </Button>
           </div>
         </div>
+      {/* Logos Slider */}
       </Container>
+      <LogosSlider className="mt-16" />
+      
     </section>
   );
 }

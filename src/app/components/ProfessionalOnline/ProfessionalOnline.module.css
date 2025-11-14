@@ -1,0 +1,60 @@
+.backgroundDecoration {
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 40%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(100, 59, 255, 0.15) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.backgroundDecoration::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(15, 218, 194, 0.1) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.videoCard {
+  border: 2px solid rgba(100, 59, 255, 0.3);
+  box-shadow: 
+    0 0 20px rgba(100, 59, 255, 0.2),
+    0 0 40px rgba(100, 59, 255, 0.1),
+    inset 0 0 20px rgba(100, 59, 255, 0.05);
+  background: rgba(2, 0, 22, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.videoCard::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 1rem;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    rgba(100, 59, 255, 0.4) 0%,
+    rgba(100, 59, 255, 0.1) 50%,
+    rgba(100, 59, 255, 0.4) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  opacity: 0.6;
+}
+
